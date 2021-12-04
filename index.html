@@ -97,9 +97,116 @@
             font-size: 8px;
         }
         
+        .container-details {
+            margin-top: 25px;
+        }
+        
+        .header-details {
+            background: #EEEEEE;
+            /* height: 51px; */
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border: 0.4px solid #959595;
+        }
+        
+        .status-details {
+            background: #1D518A;
+            color: #ffffff;
+            border: 0.4px solid #1D518A;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 9px;
+            padding: 2px 0 3px 12px;
+        }
+        
+        .status {
+            margin-right: 9px;
+        }
+        
+        .status-result {
+            color: #ED2024;
+        }
+        
+        .s-info {
+            padding: 7px 0 9px 12px;
+        }
+        
+        .s-info .ally {
+            display: flex;
+        }
+        
+        .s-info .ally a {
+            color: #1E5288;
+            font-size: 6px;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+        
+        .s-info p {
+            font-size: 6px;
+            color: #333333;
+            margin-bottom: 8px;
+        }
+        
         .container-total {
             display: flex;
             justify-content: end;
+            margin-top: 45px;
+        }
+        
+        .table {
+            margin-bottom: 10px;
+            border-left: 0.4px solid #959595;
+            border-right: 0.4px solid #959595;
+            border-bottom: 0.4px solid #959595;
+        }
+        
+        .table .head {
+            color: #242B32;
+            background: #EEF5F9;
+            font-weight: 700;
+        }
+        
+        .table .head p {
+            font-size: 8px;
+        }
+        
+        .table .body {
+            background: #ffffff;
+            color: #1E5288;
+            font-weight: 400;
+            font-style: 6px;
+        }
+        
+        .table .body p {
+            font-size: 6px;
+        }
+        
+        .table .cell {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .cell p {
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+        }
+        
+        .cell p:nth-child(1) {
+            border-right: 0.4px solid rgba(112, 112, 113, 0.3);
+            border-bottom: 0.4px solid rgba(112, 112, 113, 0.3);
+        }
+        
+        .cell p:nth-child(2),
+        .cell p:nth-child(3),
+        .cell p:nth-child(4) {
+            border-right: 0.4px solid rgba(112, 112, 113, 0.3);
+            border-bottom: 0.4px solid rgba(112, 112, 113, 0.3);
+        }
+        
+        .cell p:nth-child(5) {
+            border-bottom: 0.4px solid rgba(112, 112, 113, 0.3);
         }
         
         .total-products {
@@ -107,7 +214,7 @@
             height: auto;
             padding: 13px 12px 12px 13px;
             background-color: #F5F5F5;
-            border: 1px solid #959595;
+            border: 1px solid rgba(112, 112, 113, 0.3);
         }
         
         .item-products {
@@ -146,8 +253,8 @@
         }
         
         .footer {
-            position: fixed;
-            bottom: 41px;
+            /* position: fixed;
+            bottom: 41px; */
         }
         
         .footer h1 {
@@ -272,7 +379,121 @@
                 </div>
             </div>
             <div class="container-details">
-                <h1>listado</h1>
+                <div class="header-details">
+                    <div class="status-details">
+                        <span class="status">Estatus</span>
+                        <span class="status-result">En Proceso</span>
+                    </div>
+                    <div class="s-info">
+                        <p>Fecha estimada de entrega: 15 de noviembre 2021</p>
+                        <div class="ally">
+                            <a>Código Aliado: 000001</a>
+                            <a>Razón Social: EMPRESAS VESTA S.A.</a>
+                            <a>R.U.C.: 0000 0000 00</a>
+                            <a>Teléfono: +507 393 5886</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="table">
+                <div class=" head cell">
+                    <p>Artículo #</p>
+                    <p>Descripción</p>
+                    <p>Precio Unitario</p>
+                    <p>Cantidad</p>
+                    <p>Sub Total</p>
+                </div>
+                <div class="body cell">
+                    <p>2541-03</p>
+                    <p>Sillón cuero</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2551-08</p>
+                    <p>Sillón cuero blanco</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2595-10</p>
+                    <p>Silla plástica</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+
+                <div class="body cell">
+                    <p>2720-40</p>
+                    <p>Sillón cuero negro</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2541-03</p>
+                    <p>Sillón cuero</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2551-08</p>
+                    <p>Sillón cuero blanco</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2595-10</p>
+                    <p>Silla plástica</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+
+                <div class="body cell">
+                    <p>2720-40</p>
+                    <p>Sillón cuero negro</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2541-03</p>
+                    <p>Sillón cuero</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2551-08</p>
+                    <p>Sillón cuero blanco</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+                <div class="body cell">
+                    <p>2595-10</p>
+                    <p>Silla plástica</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+
+                <div class="body cell">
+                    <p>2720-40</p>
+                    <p>Sillón cuero negro</p>
+                    <p>$25.00</p>
+                    <p>1</p>
+                    <p>$25.00</p>
+                </div>
+
+
+
             </div>
             <div class="container-total">
                 <div class="total-products">
